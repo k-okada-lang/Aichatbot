@@ -1,4 +1,4 @@
-[index_16.html](https://github.com/user-attachments/files/32367432/index_16.html)
+[Uploading index_17.html…]()
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -393,7 +393,7 @@
       {label:"パスワードを変更したい", to:"id_password_a"},
       {label:"その他", to:"id_password_a"}
     ]},
-    id_password_a:{type:"answer", text:"パスワードを確認・再設定する方法をご案内します。初めてログインされる場合、IDとパスワードはお申し込み完了後にお送りしているご案内に記載されています。ご自身で設定した記憶がない場合は、まずお申し込み時のご案内メールをご確認ください。見当たらない場合や、現在のパスワードが分からない場合は、SWAPayサポートまでご連絡ください（現在のパスワードそのものをサポートへ送信する必要はありません）。", to:"resolve_check"},
+    id_password_a:{type:"answer", text:"端末を起動する際の初期パスワードは「000000」（0が6つ）です。数字のみ入力できる画面の場合も、まずはこちらの初期パスワードをお試しください。コード決済(QRコード決済)用のログインID・パスワードは別のもので、お申し込み完了後にお送りしているご案内に記載されています。初期パスワードでもログインできない場合や、変更後のパスワードが分からなくなった場合は、SWAPayサポートまでご連絡ください（現在のパスワードそのものをサポートへ送信する必要はありません）。", to:"resolve_check"},
 
     id_login_q:{type:"choice", crumb:"ログインできない", q:"どのような状態ですか？", options:[
       {label:"IDが違うと表示される", to:"id_login_a"},
@@ -437,7 +437,7 @@
       {label:"申込み状況やID・パスワードを確認したい", to:"pay_qr_status_a"},
       {label:"その他", to:"pay_qr_other_a"}
     ]},
-    pay_qr_apply_a:{type:"answer", text:"QRコード決済のご利用には、別途お申し込みが必要です。SWAPayサポートよりお申し込みのご案内をお送りしますので、3営業日程度を目安にお待ちください。ご案内が届きましたら、記載のURLよりお申し込み手続きをお願いいたします。お申し込み完了後、決済端末にログインするためのID・パスワードが発行されます。セキュリティの都合上、URL発行から72時間以内に初回ログインが必要ですので、あわせてご注意ください。", to:"resolve_check"},
+    pay_qr_apply_a:{type:"answer", text:"QRコード決済のご利用には、別途お申し込みが必要です。SWAPayサポートよりお申し込みのご案内をお送りしますので、3営業日程度を目安にお待ちください。ご案内が届きましたら、記載のURLよりお申し込み手続きをお願いいたします。お申し込み完了後、決済端末にログインするためのID・パスワードが発行されます。セキュリティの都合上、URL発行から72時間以内に初回ログインが必要ですので、あわせてご注意ください。なお、月額の基本料金は発生せず、ご負担いただくのは決済手数料のみです。", to:"resolve_check"},
 
     pay_qr_login_q:{type:"choice", crumb:"QRコード決済にログインできない", q:"お申し込み手続きはすでに完了していますか？", options:[
       {label:"完了している（IDは入力したがログインできない）", to:"pay_qr_login_done_a"},
@@ -445,11 +445,11 @@
       {label:"まだ完了していない", to:"pay_qr_apply_a"},
       {label:"ID・パスワードが分からない", to:"pay_qr_status_a"}
     ]},
-    pay_qr_login_done_a:{type:"answer", text:"ログインIDには、管理画面でご確認いただける「T」から始まる番号をご入力いただく必要があります。ログインID欄に「T」から始まる番号を入力されているか、今一度ご確認ください。ご確認いただいてもログインできない場合は、状況を確認いたしますので、SWAPayサポートまでご連絡ください。", to:"resolve_check"},
+    pay_qr_login_done_a:{type:"answer", text:"ログインIDには、管理画面でご確認いただける「T」から始まる8桁の番号をご入力いただく必要があります。管理画面上では「端末ID」として表示されている場合がありますが、同じ番号です。ログインID欄に「T」から始まる番号を入力されているか、今一度ご確認ください。ご確認いただいてもログインできない場合は、状況を確認いたしますので、SWAPayサポートまでご連絡ください。", to:"resolve_check"},
 
     pay_qr_status_a:{type:"answer", text:"お申し込みの状況、またはログイン用ID・パスワードについては、加盟店様ごとに確認が必要な内容です。加盟店名・店舗名を添えてSWAPayサポートへお問い合わせいただければ、状況を確認のうえご案内いたします（現在お使いのパスワードそのものをお送りいただく必要はありません）。", to:"resolve_check"},
 
-    pay_qr_other_a:{type:"answer", text:"QRコード決済の操作方法や設定については、お送りしているご利用マニュアル・お申し込みマニュアルもあわせてご確認ください。入力や手続きの途中で進めなくなった場合は、画面が固まる・エラーが表示される・ボタンが反応しないなど、発生している状況を詳しくお聞かせいただけますと、確認のうえご案内いたします。SWAPayサポートまでお問い合わせください。", to:"resolve_check"},
+    pay_qr_other_a:{type:"answer", text:"QRコード決済の操作方法や設定については、お送りしているご利用マニュアル・お申し込みマニュアルもあわせてご確認ください。入力や手続きの途中で進めなくなった場合は、画面が固まる・エラーが表示される・ボタンが反応しないなど、発生している状況を詳しくお聞かせいただけますと、確認のうえご案内いたします。文章でのご説明が難しい場合は、お電話でのご案内も可能です。SWAPayサポートまでお問い合わせください。", to:"resolve_check"},
 
     pay_unknown_q:{type:"choice", crumb:"決済結果が分からない", q:"現在の状態を選択してください。", options:[
       {label:"画面が固まっている", to:"pay_unknown_a"},
@@ -479,7 +479,7 @@
       {label:"電源が入らない", to:"dev_power_q"},
       {label:"画面が固まった・動かない", to:"dev_freeze_q"},
       {label:"操作方法が分からない", to:"dev_howto_q"},
-      {label:"端末を交換したい", to:"dev_replace_q"}
+      {label:"端末を交換・返却したい", to:"dev_replace_q"}
     ]},
     dev_power_q:{type:"choice", crumb:"電源が入らない", q:"どの状態ですか？", options:[
       {label:"電源ボタンを押しても反応しない", to:"dev_power_a"},
@@ -487,7 +487,7 @@
       {label:"充電しても起動しない", to:"dev_power_a"},
       {label:"その他", to:"dev_power_a"}
     ]},
-    dev_power_a:{type:"answer", text:"充電状態をご確認のうえ、電源を再度お試しください。改善しない場合は、端末の状態を確認してSWAPayサポートへお問い合わせください。", to:"resolve_check"},
+    dev_power_a:{type:"answer", text:"充電状態や電源コードの接続をご確認のうえ、電源を再度お試しください。電源コードを接続した状態でも起動しない場合は、まず端末に記載されているサポート窓口へお問い合わせください。窓口に繋がらない場合は、SWAPayサポートまでご連絡いただければ、弊社にて対応いたします。", to:"resolve_check"},
 
     dev_freeze_q:{type:"choice", crumb:"画面が固まった・動かない", q:"どの状態ですか？", options:[
       {label:"タッチ操作ができない", to:"dev_freeze_a"},
@@ -505,13 +505,14 @@
     ]},
     dev_howto_a:{type:"answer", text:"該当する操作方法をご案内します。画面に表示されている内容と異なる場合は、端末の写真や画面内容を添えてお問い合わせください。", to:"resolve_check"},
 
-    dev_replace_q:{type:"choice", crumb:"端末を交換したい", q:"交換を希望する理由はどれですか？", options:[
-      {label:"故障した", to:"dev_replace_a"},
-      {label:"破損した", to:"dev_replace_a"},
+    dev_replace_q:{type:"choice", crumb:"端末を交換・返却したい", q:"ご希望の内容はどれですか？", options:[
+      {label:"故障した（交換したい）", to:"dev_replace_a"},
+      {label:"破損した（交換したい）", to:"dev_replace_a"},
       {label:"紛失した", to:"dev_replace_a"},
-      {label:"その他", to:"dev_replace_a"}
+      {label:"利用をやめて返却したい", to:"dev_return_a"}
     ]},
     dev_replace_a:{type:"answer", text:"端末交換の可否・手続きについて確認いたします。紛失・破損の場合は、速やかにSWAPayサポートへご連絡ください。", to:"resolve_check"},
+    dev_return_a:{type:"answer", text:"ご利用を中止し、端末を返却したいとのこと、承知いたしました。返却の可否・返却方法についてご案内いたしますので、加盟店名・店舗名を添えてSWAPayサポートへご連絡ください。", to:"resolve_check"},
 
     cat_network:{type:"choice", crumb:"④ 通信・その他について", q:"どの内容についてお困りですか？", options:[
       {label:"Wi-Fiにつながらない", to:"net_wifi_q"},
@@ -541,7 +542,7 @@
       {label:"入金日・入金額を確認したい", to:"sales_deposit_q"},
       {label:"手数料・明細を確認したい", to:"sales_fee_a"}
     ]},
-    sales_today_a:{type:"answer", text:"本日分の売上は、端末の売上照会機能または管理画面でご確認いただけます。表示に相違がある場合は、SWAPayサポートへお問い合わせください。", to:"resolve_check"},
+    sales_today_a:{type:"answer", text:"決済端末の売上は、端末の売上照会機能、またはGMOフィナンシャルゲートウェイの管理画面でご確認いただけます。管理画面のログイン情報は、端末発送から10営業日以内にお届けします。表示に相違がある、またはログイン情報が届かない場合は、SWAPayサポートへお問い合わせください。", to:"resolve_check"},
     sales_past_a:{type:"answer", text:"過去の売上については、管理画面の売上履歴から日付ごとにご確認いただけます。期間の合計しか確認できない、部門別・日別の内訳が分からないなど、表示内容でお困りの場合は、確認したい対象期間と単位（日別・部門別など）を添えてSWAPayサポートへお問い合わせください。", to:"resolve_check"},
     sales_fee_a:{type:"answer", text:"手数料や明細については、管理画面の明細情報をご確認ください。内容にご不明な点がある場合は、SWAPayサポートへお問い合わせください。", to:"resolve_check"},
 
@@ -551,7 +552,7 @@
       {label:"売上明細を確認したい", to:"sales_deposit_a"},
       {label:"その他", to:"sales_deposit_a"}
     ]},
-    sales_deposit_a:{type:"answer", text:"対象期間・売上金額・入金額をご確認ください。確認が必要な場合は、対象の取引日や店舗情報を添えてSWAPayサポートへお問い合わせください。", to:"resolve_check"},
+    sales_deposit_a:{type:"answer", text:"対象期間・売上金額・入金額をご確認ください。確認が必要な場合は、対象の取引日や店舗情報を添えてSWAPayサポートへお問い合わせください。なお、カード会社への売上表の提出要否など、契約内容によって異なる場合がある点は、SWAPayサポートにて正確な内容をご確認いただけます。", to:"resolve_check"},
 
     receipt_q:{type:"choice", crumb:"レシート・明細について", q:"どの内容ですか？", options:[
       {label:"レシートが印刷されない", to:"receipt_a"},
